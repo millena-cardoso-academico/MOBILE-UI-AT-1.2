@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+}
+
+.menu-vertical {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.marca {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8rem;
+  color: #000;
+  margin-right: 20px;
+}
+
+.icone-menu {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.menu-itens {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.menu-itens.ativo {
+  display: flex;
+}
+
+.item {
+  margin: 10px 0;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.item:hover {
+  transform: translateX(10px);
+  font-size: 1.1em;
+}
